@@ -38,14 +38,14 @@ console.log('1. Ожидаю "true", получаю - ', P('ДовОд'));
 console.log('1. Ожидаю "false", получаю - ', P('Кекс'));
 console.log('1. Ожидаю "true", получаю - ', P('Лёша на полке клопа нашёл '));
 
-function N (num){
-  let h='';
+function N(num){
+  let h = '';
   for (const ch of String(num)){
-    if (ch >= '0' && ch <'9' ){
-      h+=ch;
+    if (ch >= '0' && ch <= '9'){
+      h += ch;
     }
   }
-  if (h ===' '){
+  if (h === ''){
     return NaN;
   }
   return Number(h);
